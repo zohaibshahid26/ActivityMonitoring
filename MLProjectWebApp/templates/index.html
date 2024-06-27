@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <link rel="icon" href="/static/icon.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        .services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .owl-service-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .item img {
+            width: 50px;
+            /* Adjust image size */
+        }
+
+        .down-content {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .item {
+            width: 20%;
+            /* Adjust the width as needed */
+            max-width: 300px;
+            /* Set a maximum width to prevent items from stretching too much */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Semi-transparent card background */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="services">
+        <h1 style="text-align: center; color:#ffffff; font-size: xx-large">Activity Recognition</h1>
+        <div class="container">
+            <h1 style="text-align: center;">Choose an Algorithm</h1>
+            <div class="owl-service-item">
+                <div class="item">
+                    <div class="down-content">
+                        <h4>Random Forest Classifier</h4>
+                        <p>An ensemble method that builds multiple decision trees and combines their predictions to
+                            produce a final result.
+                        </p>
+                        <form action="/results" method="POST">
+                            <input type="hidden" name="algorithm" value="Random Forest Classifier">
+                            <button type="submit" class="btn">Run Algorithm</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="down-content">
+                        <h4>Support Vector Machine</h4>
+                        <p>Used for classification and regression analysis, which finds
+                            the hyperplane that best divides a dataset into classes.</p>
+                        <form action="/results" method="POST">
+                            <input type="hidden" name="algorithm" value="Support Vector Machine">
+                            <button type="submit" class="btn">Run Algorithm</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="down-content">
+                        <h4>Logistic Regression</h4>
+                        <p>A linear model for binary classification that predicts the probability of an outcome using
+                            logistic function.</p>
+                        <form action="/results" method="POST">
+                            <input type="hidden" name="algorithm" value="Logistic Regression">
+                            <button type="submit" class="btn">Run Algorithm</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="down-content">
+                        <h4>Naive Bayes</h4>
+                        <p> A probabilistic classifier based on Bayes' theorem with the assumption of independence
+                            between features.</p>
+                        <form action="/results" method="POST">
+                            <input type="hidden" name="algorithm" value="Naive Bayes">
+                            <button type="submit" class="btn">Run Algorithm</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<hr>
+</body>
+
+</html>
