@@ -1,41 +1,58 @@
-To Use the Jupyter Notebook file
+# Activity Monitoring Project
 
-1-Open the file Named ActivityMonitoring_01_08_16  in Jupyter Notebook and change the data_path 
+## Jupyter Notebook Instructions
 
-that is initially set to data_path = "D:\\5th Semester\\ML\\ML Project\\bbh\\"
-change this path accordingly where you have stored the files that we were given upto \\bbh\\
-which further has training and testing directories
+To use the Jupyter Notebook file:
 
+1. Open the file named `ActivityMonitoring_01_08_16.ipynb` in Jupyter Notebook.
+2. Change the `data_path`, which is initially set to:
 
-To Use the Web App we have created in FLASK for this project
+    ```python
+    data_path = "D:\\5th Semester\\ML\\ML Project\\bbh\\"
+    ```
 
-Open the Project folder named MLProjectWebApp in an IDE or CMD
+    Change this path to where you have stored the files, up to `\\bbh\\`, which further contains the `training` and `testing` directories.
 
-1- Make sure you have python installed
+## Flask Web App Instructions
 
-2- Activate the virtual enviroment
+To use the web app we have created in Flask for this project:
 
->> source venv/bin/activate  # For Linux/Mac
->> venv\Scripts\activate      # For Windows
+1. Open the project folder named `MLProjectWebApp` in an IDE or CMD.
+2. Make sure you have Python installed.
+3. Activate the virtual environment:
 
-3- Install Dependencies
+    - For Linux/Mac:
 
->>pip install -r requirements.txt
+        ```bash
+        source venv/bin/activate
+        ```
 
+    - For Windows:
 
-4-Change the data_path
+        ```bash
+        venv\Scripts\activate
+        ```
 
-data_path = "D:\\5th Semester\\ML\\ML Project\\bbh\\"
+4. Install dependencies:
 
-change this path accordingly where you have stored the files that we were given upto \\bbh\\
- which further has training and testing directories
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-5-Run Application
+5. Change the `data_path`:
 
->> python app.py
+    ```python
+    data_path = "D:\\5th Semester\\ML\\ML Project\\bbh\\"
+    ```
 
+    Change this path to where you have stored the files, up to `\\bbh\\`, which further contains the `training` and `testing` directories.
 
-6-Access the Application:
-They can open a web browser and go to http://localhost:5000 to view our flask application.
+6. Run the application:
 
+    ```bash
+    python app.py
+    ```
 
+7. Access the application:
+
+    Open a web browser and go to `http://localhost:5000` to view our Flask application.
